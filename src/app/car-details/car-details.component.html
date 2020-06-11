@@ -1,0 +1,28 @@
+<div class="container">
+
+    <h4 style="margin: 40px;">About  Car</h4>
+
+	<div class="row" class="ads">
+        <!-- Category Card -->
+        <div class="col-sm-12">
+            <div class="card rounded">
+                <div class="card-image">
+                    <span class="card-notify-badge">{{ car.couleur }}</span>
+                    <span class="card-notify-year">New</span>
+                    <img class="img-fluid" [src]="car.image" alt="Alternate Text" />
+                </div>
+                <div class="card-image-overlay m-auto">
+                    <span class="card-detail-badge">Marque : {{ car.marque }}</span>
+                    <span class="card-detail-badge">nombre siege : {{car.n_sieges}} </span>
+                                </div>
+
+                <div class="card-body text-center">
+                    <div class="ad-title m-auto">
+                        <h5>{{ car.n_immatriculation }}</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

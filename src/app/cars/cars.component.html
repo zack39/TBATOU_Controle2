@@ -1,0 +1,24 @@
+<p>cars works!</p>
+<div class="container">
+
+    <h4 style="margin: 40px;">Cars List</h4>
+
+	<div class="row" class="ads">
+    <!-- Category Card -->
+    <div class="col-sm-4"  *ngFor="let item of car" style="float: left;">
+        <div class="card rounded">
+            <div class="card-image">
+                <span class="card-notify-badge"></span>
+                <span class="card-notify-year">New</span>
+                <img class="img-fluid" [src]="item.image" alt="Alternate Text" />
+            </div>
+            <div class="card-body text-center">
+                <div class="ad-title m-auto">
+                    <h5>{{ item.n_immatriculation }}</h5>
+                </div>
+                <span class="ad-btn" (click)="goToCarsDetail(item)" style="cursor: pointer;">View</span>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
